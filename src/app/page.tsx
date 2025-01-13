@@ -1,10 +1,11 @@
 import React from "react";
-import img from "../../public/ecell_img-removebg-preview.png"
+// import img from "../../public/ecell_img-removebg-preview.png"
 // import Link from "next/link";
+// import logo from "../../public/logo3.png"
 
 export default function Home() {
   // const eventDates = "31st JAN 2025 to 2nd FEB 2025";
-  console.log(img);
+  // console.log(logo);
   
 
   const menuItems = [
@@ -35,8 +36,9 @@ export default function Home() {
           <div className="flex items-center">
             <img
               alt="E-Cell dr.aith"
-              className="h-10"
-              src={`/_next/static/media/ecell img.7666c223.avif`}
+              className="h-16"
+              src={`/_next/static/media/logo3.08c2ed5e.png`}
+              // style={}
             />
             {/* <span className="ml-2 text-xl font-bold">E-Cell IIT BHU</span> */}
           </div>
