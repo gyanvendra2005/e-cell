@@ -1,11 +1,11 @@
 import React from "react";
 // import img from "../../public/ecell_img-removebg-preview.png"
 // import Link from "next/link";
-// import logo from "../../public/logo3.png"
+import logo from "../../public/logo3.png"
 
 export default function Home() {
   // const eventDates = "31st JAN 2025 to 2nd FEB 2025";
-  // console.log(logo);
+  console.log(logo);
   
 
   const menuItems = [
