@@ -1,9 +1,9 @@
 import React from "react";
 import img from "../../public/ecell_img-removebg-preview.png"
-import Link from "next/link";
+// import Link from "next/link";
 
 export default function Home() {
-  const eventDates = "31st JAN 2025 to 2nd FEB 2025";
+  // const eventDates = "31st JAN 2025 to 2nd FEB 2025";
   console.log(img);
   
 
