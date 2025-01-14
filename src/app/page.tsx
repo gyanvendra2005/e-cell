@@ -3,13 +3,7 @@
 import React, { useState } from "react";
 import img from "../../public/ecell_img-removebg-preview.png";
 import logo from "../../public/logo3.png";
-import { FaAngleDown, FaBars, FaFacebookF, FaInstagram, FaLinkedinIn, FaTimes } from "react-icons/fa";
-import { RiAccountCircleLine } from "react-icons/ri";
-import { FaXTwitter } from "react-icons/fa6";
 import logo1 from "../../public/logo2.webp";
-// import { CardDemo } from "@/components/cards";
-import { cn } from "@/lib/util";
-import Image from "next/image";
 import bg from "../../public/abhi.jpeg"
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
@@ -52,7 +46,7 @@ export default function Home() {
     <>
       {/* Header */}
       <Navbar/>  
-      
+
       <main className="py-16">
         {/* Marquee Section */}
         <div className="bg-yellow-100 py-4 overflow-hidden">
