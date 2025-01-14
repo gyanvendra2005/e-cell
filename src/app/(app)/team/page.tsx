@@ -31,10 +31,10 @@ const page = () => {
         
                <div className="grid grid-cols-2  ">
                  {teamMembers.map((member,index)=>(
-                   <div className="max-w-xs  group/card mt-10 m-20" key={index}>
+                   <div className="max-w-xs  group/card mt-10 m-4  md:m-20" key={index}>
                    <div
                      className={cn(
-                       " cursor-pointer overflow-hidden relative card h-72 rounded-md shadow-xl  max-w-sm mx-auto backgroundImage flex flex-col justify-between p-4",
+                       " cursor-pointer overflow-hidden relative card h-60 md:h-72 rounded-md shadow-xl  max-w-sm mx-auto backgroundImage flex flex-col justify-between p-4",
                        "bg-[url(/_next/static/media/abhi.4a87f790.jpeg)] bg-cover"
                      )}
                    >
