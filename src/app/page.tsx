@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from "react";
+import React from "react";
 import img from "../../public/ecell_img-removebg-preview.png";
 import logo from "../../public/logo3.png";
 import logo1 from "../../public/logo2.webp";
