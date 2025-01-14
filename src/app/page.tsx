@@ -11,36 +11,6 @@ import Navbar from "@/components/Navbar";
 export default function Home() {
 
       console.log(img,logo,logo1,bg);
-      
-
-  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const menuItems = [
-    {
-      label: "Initiatives",
-      options: ["Option 1", "Option 2"],
-    },
-    {
-      label: "Learn",
-      options: ["Option 1", "Option 2"],
-    },
-  ];
-
-  // const stats = [
-  //   { value: "50+", description: "overall social reach!" },
-  //   { value: "10+", description: "startups supported till date!" },
-  // ];
-  const teamMembers = [
-    { name: "ABHISHEK SINGH", role: "Overall Coordinator", image: "/_next/static/media/abhi.4a87f790.jpeg",gmail:"gyani1234@gmail.com" },
-    { name: "MANJEET SINGH", role: "Overall Coordinator", image: "/_next/static/media/abhi.4a87f790.jpeg",gmail:"gyani1234@gmail.com"  },
-    { name: "SAKSHI PANDEY", role: "Finance & PR manager", image: "/_next/static/media/abhi.4a87f790.jpeg",gmail:"gyani1234@gmail.com"  },
-    { name: "ARPIT SHAKYA", role: "Event Manager", image: "/_next/static/media/abhi.4a87f790.jpeg",gmail:"gyani1234@gmail.com"  },
-    { name: "STUTI CHAUDHARY", role: "Event Manager", image: "/_next/static/media/abhi.4a87f790.jpeg",gmail:"gyani1234@gmail.com"  },
-    { name: "SATYAM PANDEY", role: "Head Graphic Design", image: "/_next/static/media/abhi.4a87f790.jpeg",gmail:"gyani1234@gmail.com"  },
-    { name: "ABHAY TIWARI", role: "Head Video Editing", image: "/_next/static/media/abhi.4a87f790.jpeg",gmail:"gyani1234@gmail.com"  },
-    { name: "ANSH SHARMA", role: "Head Social Media", image: "/_next/static/media/abhi.4a87f790.jpeg",gmail:"gyani1234@gmail.com"},
-    { name: "HARIKESH TRIPATHI", role: "Head Tech", image: "/_next/static/media/abhi.4a87f790.jpeg",gmail:"gyani1234@gmail.com"},
-  ];
-  
 
   return (
     <>
