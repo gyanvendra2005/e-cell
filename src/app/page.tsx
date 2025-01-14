@@ -7,10 +7,14 @@ import { FaAngleDown, FaBars, FaFacebookF, FaInstagram, FaLinkedinIn, FaTimes } 
 import { RiAccountCircleLine } from "react-icons/ri";
 import { FaXTwitter } from "react-icons/fa6";
 import logo1 from "../../public/logo2.webp";
+// import { CardDemo } from "@/components/cards";
+import { cn } from "@/lib/util";
+import Image from "next/image";
+import bg from "../../public/abhi.jpeg"
 
 export default function Home() {
 
-      console.log(img,logo,logo1);
+      console.log(img,logo,logo1,bg);
       
 
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -25,10 +29,22 @@ export default function Home() {
     },
   ];
 
-  const stats = [
-    { value: "50+", description: "overall social reach!" },
-    { value: "10+", description: "startups supported till date!" },
+  // const stats = [
+  //   { value: "50+", description: "overall social reach!" },
+  //   { value: "10+", description: "startups supported till date!" },
+  // ];
+  const teamMembers = [
+    { name: "ABHISHEK SINGH", role: "Overall Coordinator", image: "/_next/static/media/abhi.4a87f790.jpeg",gmail:"gyani1234@gmail.com" },
+    { name: "MANJEET SINGH", role: "Overall Coordinator", image: "/_next/static/media/abhi.4a87f790.jpeg",gmail:"gyani1234@gmail.com"  },
+    { name: "SAKSHI PANDEY", role: "Finance & PR manager", image: "/_next/static/media/abhi.4a87f790.jpeg",gmail:"gyani1234@gmail.com"  },
+    { name: "ARPIT SHAKYA", role: "Event Manager", image: "/_next/static/media/abhi.4a87f790.jpeg",gmail:"gyani1234@gmail.com"  },
+    { name: "STUTI CHAUDHARY", role: "Event Manager", image: "/_next/static/media/abhi.4a87f790.jpeg",gmail:"gyani1234@gmail.com"  },
+    { name: "SATYAM PANDEY", role: "Head Graphic Design", image: "/_next/static/media/abhi.4a87f790.jpeg",gmail:"gyani1234@gmail.com"  },
+    { name: "ABHAY TIWARI", role: "Head Video Editing", image: "/_next/static/media/abhi.4a87f790.jpeg",gmail:"gyani1234@gmail.com"  },
+    { name: "ANSH SHARMA", role: "Head Social Media", image: "/_next/static/media/abhi.4a87f790.jpeg",gmail:"gyani1234@gmail.com"},
+    { name: "HARIKESH TRIPATHI", role: "Head Tech", image: "/_next/static/media/abhi.4a87f790.jpeg",gmail:"gyani1234@gmail.com"},
   ];
+  
 
   return (
     <>
@@ -88,7 +104,10 @@ export default function Home() {
               {isMobileMenuOpen ? <FaTimes className="text-2xl" /> : <FaBars className="text-2xl" />}
             </button>
           </div>
+
         </div>
+
+
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
@@ -132,7 +151,9 @@ export default function Home() {
         )}
 
        
-      </header>
+      </header>  
+
+
 
       <main className="py-16">
         {/* Marquee Section */}
@@ -146,13 +167,13 @@ export default function Home() {
         {/* Hero Section */}
         <div className="container mx-auto px-4 flex flex-wrap items-center">
           <div className="w-full lg:w-2/3 text-center lg:text-left">
-            <h1 className="text-4xl md:text-6xl font-bold text-black mt-8 lg:ml-20">
+            <h1 className="text-4xl md:text-6xl font-bold text-black mt-16 lg:ml-20">
               E-Cell DR. AITD
             </h1>
-            <p className="text-lg md:text-4xl text-gray-700 mt-4 lg:ml-20">
+            <p className="text-lg md:text-4xl text-gray-700 mt-8 lg:ml-20">
               Accelerate Your <span className="text-orange-500">Incubation</span> Journey!
             </p>
-            <p className="text-gray-600 text-base md:text-xl mt-4 lg:ml-20">
+            <p className="text-gray-600 text-base md:text-xl mt-6 lg:ml-20">
               Welcome to the entrepreneurship community of Dr. A.I.T.D Kanpur where we ideate,
               iterate, and incubate the future innovations of the century!
             </p>
@@ -167,11 +188,10 @@ export default function Home() {
               src="/_next/static/media/ecell_img-removebg-preview.7e87eb88.png"
             />
           </div>
-        </div>
- 
-           {/* About Section */}
-        <div className="container lg:ml-20 mx-auto px-4 flex flex-wrap items-center mt-16">
-          <div className="w-full lg:w-1/2 text-center lg:text-left">
+
+            {/* About Section */}
+        <div className="container mx-auto px-4 flex flex-wrap items-center mt-24">
+          <div className="w-full lg:w-1/2 text-center lg:ml-16 lg:text-left">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">Who Are We?</h2>
             <p className="text-gray-600 text-base md:text-lg mb-4">
               E-Cell Dr. A.I.T.D Kanpur is an institute body run by students, devoted to connecting entrepreneurs with the startup ecosystem. 
@@ -182,25 +202,59 @@ export default function Home() {
             </button>
           </div>
           <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
-            {/* <img
-              alt="About Illustration"
-              className="mx-auto rounded-lg"
-              src="/_next/static/media/logo2.adab1b74.webp"
-            /> */}
           </div>
         </div>
+        </div>
+ 
 
-        {/* Stats Section */}
-        <div className="container mx-auto px-4 mt-16 text-center">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <h3 className="text-4xl md:text-6xl font-bold text-blue-500">{stat.value}</h3>
-                <p className="text-gray-600 text-sm md:text-xl">{stat.description}</p>
-              </div>
-            ))}
+ {/* our team */}
+ 
+       <div className="flex flex-col items-center bg-black mt-10 py-10">
+          <div className="text-center mb-10">
+            <h2 className="text-lg font-semibold text-orange-500 mb-2">CONTACT</h2>
+            <h1 className="text-4xl text-white font-bold mb-4">Our Team</h1>
+            <p className="text-white">Contact us for any queries, questions, or ideas.</p>
           </div>
-        </div>
+
+       <div className="grid grid-cols-2  ">
+         {teamMembers.map((member,index)=>(
+           <div className="max-w-xs  group/card mt-10 m-20" key={index}>
+           <div
+             className={cn(
+               " cursor-pointer overflow-hidden relative card h-72 rounded-md shadow-xl  max-w-sm mx-auto backgroundImage flex flex-col justify-between p-4",
+               "bg-[url(/_next/static/media/abhi.4a87f790.jpeg)] bg-cover"
+             )}
+           >
+             <div className="absolute w-full h-full top-0 left-0 transition duration-300 group-hover/card:bg-black opacity-60"></div>
+             <div className="flex flex-row items-center space-x-4 z-10">
+               <Image
+                 height="100"
+                 width="100"
+                 alt={`Portrait of ${member.name}`}
+                 src={member.image}
+                 className="h-10 w-10 rounded-full border-2 object-cover"
+               />
+               <div className="flex flex-col">
+                 <p className="font-normal text-base text-gray-50 relative z-10">
+                   {member.name}
+                 </p>
+                 {/* <p className="text-sm text-gray-400">2 min read</p> */}
+               </div>
+             </div>
+             <div className="text content">
+               <h1 className="font-bold text-xl md:text-2xl text-gray-50 relative z-10">
+                 {member.role}
+               </h1>
+               <p className="font-normal text-sm text-gray-50 relative z-10 my-4">
+                 {member.gmail}
+               </p>
+             </div>
+           </div>
+         </div>
+         ))}
+         </div>
+      </div>
+
       </main>
 
       {/* Footer */}
@@ -212,7 +266,7 @@ export default function Home() {
               <div className="flex items-center mb-4">
                 <img
                   alt="E-Cell Logo"
-                  className="h-12"
+                  className="h-12 rounded-full"
                   src="/_next/static/media/logo2.adab1b74.webp"
                 />
                 <span className="ml-2 text-xl font-bold text-white">E-Cell DR. AITD</span>
@@ -223,7 +277,7 @@ export default function Home() {
             </div>
 
             {/* Links Section */}
-            <div className="w-full md:w-1/3 mb-6">
+            <div className=" mb-6">
               <h3 className="text-lg font-bold text-white mb-4">Quick Links</h3>
               <ul className="space-y-2">
                 <li>
